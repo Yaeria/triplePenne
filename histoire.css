@@ -183,3 +183,24 @@ ul{
 .signature{
     width: 100px;
 }
+
+
+/* Animation Vespa  */
+
+.display-anim {
+    height: 100px;
+    margin: 12px 0;
+    background: url("img/vespa\ 1.png") no-repeat left center;
+    -webkit-animation: test 4s infinite;
+    animation: test 4s infinite;
+}
+@-webkit-keyframes test {
+    50% {
+        background-position: right center;
+    }
+}
+@keyframes test {
+    50% {
+        background-position: right center;
+    }
+}
