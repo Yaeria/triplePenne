@@ -132,8 +132,7 @@ body,html{
 }
 
 .main2{
-    background: url(img/background-flag-it.png) no-repeat center;
-    background-color: white;
+    background-color: #F3F3F3;
     display: flex;
     font-family: 'Roboto', sans-serif;
     justify-content: center;
@@ -146,6 +145,10 @@ body,html{
     font-size: 3em;
 }
 
+.sous-titre2{
+    
+}
+
 .ligne1, .ligne2{
     display: flex;
     justify-content: space-around;
@@ -153,6 +156,30 @@ body,html{
     margin-top: 150px;
     flex-wrap: wrap;
 }
+
+.ensemble-drapeau{
+    display: flex;
+    justify-content: space-between;
+}
+
+.drapeau{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.couleurvert{
+    width: 20px;
+    background-color: #6CC356;
+}
+.couleurblanc{
+    width: 20px;
+    background-color: #FFFFFF;
+}
+.couleurrouge{
+    width: 20px;
+    background-color: #FC0A0A;
+} 
 
 .pastatab{
     display: flex;
@@ -169,18 +196,13 @@ body,html{
     text-align: center;
     font-size: 1.3em;
     margin-bottom: 50px;
+    z-index: 9996;
 }
 
 .imgpate{
     width: 300px;
     height: 250px;
     margin-bottom: 50px;
-}
-
-.imgpate:hover{
-    width: 310px;
-    height: 260px;
-    transition: 1.2s;
 }
 
 footer{
@@ -195,10 +217,12 @@ footer{
     width: 100px;
 }
 
+
 @media (max-width:801px) {
     .main{
         background:none;
     }
+
     .titre_soustitre{
         font-size: 0.7em;
     }
@@ -206,8 +230,12 @@ footer{
         margin: 0;
     }
     .pasta{
-        background-color: #F3F3F3;
+        background-color: #FFFFFF;
         border-radius: 10px;
         padding: 25px;
+    }
+    .drapeau{
+        transform: rotate(45deg);
+        justify-content: space-between;
     }
 }
