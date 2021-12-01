@@ -1,0 +1,206 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'sweet_child_scriptregular';
+    src: url('font/sweet_child-webfont.woff2') format('woff2'),
+         url('font/sweet_child-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    height: 150vh;
+}
+
+.haut-de-page{
+    position: relative;
+    text-align: center;
+}
+
+.texte-centrer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    font-family:'sweet_child_scriptregular' ;
+    font-size: 70px;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.vert{
+    color: green;
+}
+
+.blanc{
+    color: honeydew;
+}
+
+.rouge{
+    color: red;
+}
+
+.sous-titre{
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+    font-style: italic;
+    margin-top: -30px;
+    margin-left: 100px;
+}
+
+/* Drapeaux */
+
+.ensemble-drapeau{
+    display: flex;
+    justify-content: space-between;
+}
+
+.drapeau{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    height: 70vh;
+}
+
+.couleurvert{
+    width: 20px;
+    background-color: green;
+}
+.couleurblanc{
+    width: 20px;
+    background-color: rgb(237, 238, 237);
+}
+.couleurrouge{
+    width: 20px;
+    background-color: rgb(204, 7, 7);
+} 
+
+h2{
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; ;
+    font-size: 70px;
+    font-weight: lighter;
+    font-style: italic;
+    justify-content: center;
+    display: flex;
+}
+
+.texte-histoire{
+    font-size: 30px;
+    font-style: italic;
+    margin: auto;
+}
+
+
+.second-content{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+ /* -------- TEST--------------------- */
+
+*, ::before, ::after{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width:800px ;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.slider img{
+    width: 600px;
+    display: none;
+}
+
+img.active{
+    display: block;
+    animation: fade 0.8s;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+    }
+
+    top {
+        opacity :1;
+    }
+}
+
+.boutons{
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    border: 1px solid #000;
+    box-shadow: 0 10px 10px rgba (0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.btn-nav{
+    font-size: 50px;
+    margin: 0 155px;
+    cursor: pointer;
+}
+
+.texte1.active{
+    display: none;
+    width: 700px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6CC356;
+    height: auto;
+}
+
+
+ul{
+    height: auto;
+    font-size: 30px;
+    display: flex;
+}
+
+.lien{
+    margin: 0 200px;
+}
+
+.signature{
+    width: 100px;
+}
+
+
+/* Animation Vespa  */
+
+.display-anim {
+    height: 100px;
+    margin: 12px 0;
+    background: url("img/vespa\ 1.png") no-repeat left center;
+    -webkit-animation: test 4s infinite;
+    animation: test 4s infinite;
+}
+@-webkit-keyframes test {
+    50% {
+        background-position: right center;
+    }
+}
+@keyframes test {
+    50% {
+        background-position: right center;
+    }
+}
