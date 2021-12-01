@@ -1,0 +1,40 @@
+body,html{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+     font-family: Sweet Child Script;
+     src: url(font/Sweet\ Child.ttf);
+}
+
+.main{
+    display: flex;
+    background-color: #151515;
+}
+
+.image{
+    width: 45vw;
+    position: absolute;
+    right: 0;
+    top: -15;
+}
+
+.titre_soustitre{
+    display: flex;
+    align-items: center;
+}
+
+.titre{
+    font-size: 3em;
+    font-family: Sweet Child Script;
+    color: white;
+}
+
+.vert{
+    color: #6CC356;
+}
+
+.rouge{
+    color: #EB1717;
+}
