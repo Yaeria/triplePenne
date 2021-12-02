@@ -1,0 +1,166 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'sweet_child_scriptregular';
+    src: url('font/sweet_child-webfont.woff2') format('woff2'),
+    
+    url('font/sweet_child-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    height: 150vh;
+}
+
+.haut-de-page{
+    position: relative;
+    text-align: center;
+    user-select: none;
+}
+.texte-centrer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    font-family:'sweet_child_scriptregular' ;
+    font-size: 70px;
+    font-weight: lighter;
+    font-style: italic;
+}
+.vert{
+    color: green;
+}
+
+.blanc{
+    color: honeydew;
+}
+
+.rouge{
+    color: red;
+}
+.sous-titre{
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+    font-style: italic;
+    margin-top: -30px;
+    margin-left: 100px;
+}
+/* Drapeaux */
+.ensemble-drapeau{
+    display: flex;
+    justify-content: space-between;
+}
+
+.drapeau{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    height: 70vh;
+}
+
+.couleurvert{
+    width: 20px;
+    background-color: green;
+}
+.couleurblanc{
+    width: 20px;
+    background-color: rgb(237, 238, 237);
+}
+.couleurrouge{
+    width: 20px;
+    background-color: rgb(204, 7, 7);
+} 
+.milieu{
+    text-align: center;
+    margin: 50px;
+}
+.para{
+    font-size: 30px;
+    margin: auto;
+}
+.pulse-container{
+    border-style: solid;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.315);
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    animation: contain;
+    box-shadow: 0 0 0 0 #000;
+    animation: pulse 1.3s infinite;
+}
+#img{
+    margin: auto;
+    width: 250px;
+    height: 250px;
+}
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 18px rgba(0, 0, 0, 0.01);
+    }
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    background-color: #6CC356;
+    align-items: center;
+}
+.signature{
+    width: 100px;
+}
+/* Animation Vespa  */
+
+.display-anim {
+    height: 100px;
+    margin: 12px 0;
+    background: url("img/vespa\ 1.png") no-repeat left center;
+    width: 210px;
+    
+    -webkit-animation: test 10s infinite ;
+    animation: test 10s infinite ;
+}
+@-webkit-keyframes test {
+
+    90%{
+
+        transform: rotateY(00deg);
+    }
+
+    100% {
+    margin-left: calc(100% - 210px);
+    transform: rotateY(180deg);
+    }
+}
+@keyframes test {
+
+    0%{
+
+        transform: rotateY(00deg);
+    }
+
+
+    49%{
+        transform: rotateY(0);
+    }
+    50% {
+        margin-left: calc(100% - 210px);
+        transform: rotateY(180deg);
+
+    }
+
+    100% {
+        margin-right: calc(100% - 210px);
+        transform: rotateY(180deg);
+    }
+}
+
