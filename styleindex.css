@@ -4,17 +4,17 @@ body,html{
     background-color: #151515;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    overflow-x: hidden;
 }
 
 @font-face {
-    font-family: Sweet Child Script;
-    src: url(font/Sweet\ Child.ttf);
-}
+    font-family: 'sweet_child_scriptregular';
+    src: url('font/sweet_child-webfont.woff2') format('woff2'),
+         url('font/sweet_child-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
-body,html{
-    margin:0;
-    padding: 0;
-    }
+}
     
     #btn{
         display: flex;
@@ -23,17 +23,12 @@ body,html{
         font-size: 80px;
         color: white;
         cursor: pointer;
-    
         width: 90px;
         height: 90px;
-        
         background-color: #6CC356;
         position: fixed;
-    
         border-radius: 10px;
-    
         z-index: 9999;
-    
         -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
@@ -44,17 +39,14 @@ body,html{
         position: fixed;
         top: 0;
         left: 0;
-        background:url(img/5e726225d8ad582f31aae0dd.webp) no-repeat;
+        background-color: #404040;
         background-size: contain;
-    
         width: 100vw;
         height: 100vh;
-    
         display: flex;
         flex-direction: column;
         align-items:center;
         justify-content: center;
-    
         list-style: none;
         z-index: 9999;
         transition: 0.5s;
@@ -68,7 +60,6 @@ body,html{
         display: flex;
         justify-content: end;
         padding: 10px;
-
     }
     
     #nav li {
@@ -110,7 +101,7 @@ body,html{
 
 .titre{
     font-size: 5em;
-    font-family: Sweet Child Script;
+    font-family: sweet_child_scriptregular;
     color: white;
     user-select: none;
 }
@@ -143,10 +134,22 @@ body,html{
     text-align: center;
     font-style: italic;
     font-size: 3em;
+    position: relative;
+    top: 80px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .sous-titre2{
-    
+    text-align: center;
+    opacity: 0.2;
+    font-weight: bold;
+    font-size: 50px;
+    position: relative;
+    top: -50px;
+    left: 150px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .ligne1, .ligne2{
@@ -201,7 +204,7 @@ body,html{
 
 .imgpate{
     width: 300px;
-    height: 250px;
+    height: 280px;
     margin-bottom: 50px;
 }
 
@@ -217,14 +220,25 @@ footer{
     width: 100px;
 }
 
+@media (max-width:1068px) {
+    
+    .sous-titre2{
+        font-size: 40px;
+        top: -50px;
+        left: 0px;
+    }
+}
 
-@media (max-width:801px) {
+
+@media (max-width:984px) {
+
     .main{
         background:none;
     }
 
     .titre_soustitre{
         font-size: 0.7em;
+        margin: auto;
     }
     .sous-titre{
         margin: 0;
@@ -237,5 +251,8 @@ footer{
     .drapeau{
         transform: rotate(45deg);
         justify-content: space-between;
+    }
+    .main2{
+        overflow-x: hidden;
     }
 }
