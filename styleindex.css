@@ -1,34 +1,126 @@
 body,html{
     margin: 0;
     padding: 0;
+    background-color: #151515;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 @font-face {
-     font-family: Sweet Child Script;
-     src: url(font/Sweet\ Child.ttf);
+    font-family: Sweet Child Script;
+    src: url(font/Sweet\ Child.ttf);
 }
 
+body,html{
+    margin:0;
+    padding: 0;
+    }
+    
+    #btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 80px;
+        color: white;
+        cursor: pointer;
+    
+        width: 90px;
+        height: 90px;
+        
+        background-color: #6CC356;
+        position: fixed;
+    
+        border-radius: 10px;
+    
+        z-index: 9999;
+    
+        -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    #nav {
+        z-index: 9999;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background:url(img/5e726225d8ad582f31aae0dd.webp) no-repeat;
+        background-size: contain;
+    
+        width: 100vw;
+        height: 100vh;
+    
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    
+        list-style: none;
+        z-index: 9999;
+        transition: 0.5s;
+    }
+    
+    #btn:hover{
+        background-color: orange;
+    }
+
+    .content-btn-ham{
+        display: flex;
+        justify-content: end;
+        padding: 10px;
+
+    }
+    
+    #nav li {
+        margin-top: 20px;
+    }
+    
+    #nav li a {
+        color: white;
+        text-decoration: none;
+        margin-top: 10px;
+        border: 1px solid white;
+        transition: 0.2s;
+        padding: 10px 20px;
+    }
+    
+    #nav li a:hover{
+        background-color: white;
+        color: #404040;
+    }
 .main{
     display: flex;
-    background-color: #151515;
-}
+    height: 100vh;
+    background: url(img/fourchette1.png);
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position-x: right;
 
-.image{
-    width: 45vw;
-    position: absolute;
-    right: 0;
-    top: -15;
 }
 
 .titre_soustitre{
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50px;
+    line-height: 40px;
+    z-index: 9998;
 }
 
 .titre{
-    font-size: 3em;
+    font-size: 5em;
     font-family: Sweet Child Script;
     color: white;
+    user-select: none;
+}
+
+.sous-titre{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    font-size: 1.3em;
+    margin-left: 180px;
 }
 
 .vert{
@@ -37,4 +129,113 @@ body,html{
 
 .rouge{
     color: #EB1717;
+}
+
+.main2{
+    background-color: #F3F3F3;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.titre2{
+    text-align: center;
+    font-style: italic;
+    font-size: 3em;
+}
+
+.sous-titre2{
+    
+}
+
+.ligne1, .ligne2{
+    display: flex;
+    justify-content: space-around;
+    width: 50vw;
+    margin-top: 150px;
+    flex-wrap: wrap;
+}
+
+.ensemble-drapeau{
+    display: flex;
+    justify-content: space-between;
+}
+
+.drapeau{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+}
+
+.couleurvert{
+    width: 20px;
+    background-color: #6CC356;
+}
+.couleurblanc{
+    width: 20px;
+    background-color: #FFFFFF;
+}
+.couleurrouge{
+    width: 20px;
+    background-color: #FC0A0A;
+} 
+
+.pastatab{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.pasta{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.3em;
+    margin-bottom: 50px;
+    z-index: 9996;
+}
+
+.imgpate{
+    width: 300px;
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
+    background-color: #6CC356;
+    align-items: center;
+}
+
+.signature{
+    width: 100px;
+}
+
+
+@media (max-width:801px) {
+    .main{
+        background:none;
+    }
+
+    .titre_soustitre{
+        font-size: 0.7em;
+    }
+    .sous-titre{
+        margin: 0;
+    }
+    .pasta{
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        padding: 25px;
+    }
+    .drapeau{
+        transform: rotate(45deg);
+        justify-content: space-between;
+    }
 }

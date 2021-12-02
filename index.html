@@ -5,19 +5,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Triple Penne</title>
     <link rel="stylesheet" href="styleindex.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
+    <header data-aos="fade-left" data-aos-duration="1500">
+        <div class="content-btn-ham">
+            <div id="btn">
+                <span class="iconify" data-icon="ci:hamburger"></span>
+            </div>
+        </div>
+
+        <div id="nav">
+
+            <li><a class="link" href="#">Accueil</a></li>
+            <li><a class="link" href="#">Nos Pasta</a></li>
+            <li><a class="link" href="#">La Storia</a></li>
+            <li><a class="link" href="#">Qui suis-je ?</a></li>
+            <li><a class="link" href="#">Lien</a></li>
+
+        </div>
+
+    </header>
+
+
     <div class="main">
-        <div class="titre_soustitre">
+        <div class="titre_soustitre" data-aos="fade-right" data-aos-duration="1500">
             <div class="titre"><span class="vert">Trip</span><span class="blanc">le Pe</span><span
                     class="rouge">nne</span></div>
-            <div class="sous-titre"></div>
+            <div class="sous-titre">L’impasto, quello vero.</div>
         </div>
-        <img class="image" src="img/fourchette1.png" alt="fourchette & pates">
     </div>
+
+    <div class="main2">
+        <div class="titre2">Que Pasta ?</div>
+        <div class="sous-titre2">Choisissez votre pasta préférée</div>
+        <div class="ensemble-drapeau">
+            <div class="drapeau">
+                <div class="couleurvert"></div>
+                <div class="couleurblanc"></div>
+                <div class="couleurrouge"></div>
+            </div>
+            <div class="pastatab">
+                <div class="ligne1">
+                    <div class="pasta">
+                        <img class="imgpate" src="img/COQUILLETTE.png" alt="COQUILLETTE">
+                        La Coquillettes
+                    </div>
+                    <div class="pasta"><img class="imgpate" src="img/spaghetti.png" alt="spaghetti">
+                        La Spaghetti
+                    </div>
+                    <div class="pasta"><img class="imgpate" src="img/penne rigatte.png" alt="Penne rigatte">
+                        La Penne rigatte
+                    </div>
+                </div>
+                <div class="ligne2">
+                    <div class="pasta"><img src="img/Pipe rigatte.webp" class="imgpate" alt="Pipe rigatte">
+                        La Pipe rigatte
+                    </div>
+                    <div class="pasta"><img src="img/maccaroni.png" class="imgpate" alt="maccaroni">
+                        Maccaroni
+                    </div>
+                    <div class="pasta"><img src="img/Farfalle.png" class="imgpate" alt="Farfalle">
+                        La Farfalle
+                    </div>
+                </div>
+            </div>
+            <div class="drapeau">
+                <div class="couleurvert"></div>
+                <div class="couleurblanc"></div>
+                <div class="couleurrouge"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contact</p>
+        <p>Mention Légales</p>
+        <p>CGV</p>
+        <img class="signature" src="img/Signature.png" alt="Signature">
+    </footer>
+
+
+
+
+
+    <!-- Script -->
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="scriptindex.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- -->
 </body>
 
 </html>
