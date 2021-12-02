@@ -9,7 +9,6 @@ html,body{
          url('font/sweet_child-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
 
 body{
@@ -169,7 +168,6 @@ img.active{
     height: auto;
 }
 
-
 ul{
     height: auto;
     font-size: 30px;
@@ -191,16 +189,42 @@ ul{
     height: 100px;
     margin: 12px 0;
     background: url("img/vespa\ 1.png") no-repeat left center;
-    -webkit-animation: test 4s infinite;
-    animation: test 4s infinite;
+    width: 210px;
+    
+    -webkit-animation: test 10s infinite ;
+    animation: test 10s infinite ;
 }
 @-webkit-keyframes test {
-    50% {
-        background-position: right center;
+
+    90%{
+
+        transform: rotateY(00deg);
+    }
+
+    100% {
+       margin-left: calc(100% - 210px);
+       transform: rotateY(180deg);
     }
 }
 @keyframes test {
+
+    0%{
+
+        transform: rotateY(00deg);
+    }
+
+
+    49%{
+        transform: rotateY(0);
+    }
     50% {
-        background-position: right center;
+        margin-left: calc(100% - 210px);
+        transform: rotateY(180deg);
+
+    }
+
+    100% {
+        margin-right: calc(100% - 210px);
+        transform: rotateY(180deg);
     }
 }
