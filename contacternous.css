@@ -1,0 +1,189 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    
+}
+@font-face {
+    font-family: 'sweet_child_scriptregular';
+    src: url('font/sweet_child-webfont.woff2') format('woff2'),
+    
+    url('font/sweet_child-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    height: auto;
+}
+
+.haut-de-page{
+    position: relative;
+    text-align: center;
+    user-select: none;
+}
+.texte-centrer{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h1{
+    font-family:'sweet_child_scriptregular' ;
+    font-size: 70px;
+    font-weight: lighter;
+    font-style: italic;
+}
+h2{
+    color: #a31129;
+}
+.vert{
+    color: green;
+}
+
+.blanc{
+    color: honeydew;
+}
+
+.rouge{
+    color: red;
+}
+.sous-titre{
+    font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+    font-style: italic;
+    margin-top: -30px;
+    margin-left: 100px;
+}
+/* Drapeaux */
+.ensemble-drapeau{
+    display: flex;
+    justify-content: space-between;
+}
+.drapeau{
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    height: 70vh;
+}
+.couleurvert{
+    width: 20px;
+    background-color: green;
+}
+.couleurblanc{
+    width: 20px;
+    background-color: rgb(237, 238, 237);
+}
+.couleurrouge{
+    width: 20px;
+    background-color: rgb(204, 7, 7);
+} 
+    input[type=text], textarea, input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #31a01b;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+    }
+    label{margin-right: 0px;
+    margin-left: 0px;
+    width: 100%;
+    color: #a31129;
+    }
+
+    input[type=submit] {
+    background-color: #a31129;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+    background-color: #31a01b;
+    }
+
+    .container {
+    max-width: 440px;
+    margin: auto;
+    }
+    h1  {
+    color: #a31129;
+    width: 100%;
+    }
+
+    .display-anim {
+        height: 100px;
+        margin: 12px 0;
+        background: url("img/vespa\ 1.png") no-repeat left center;
+        width: 210px;
+        
+        -webkit-animation: test 10s infinite ;
+        animation: test 10s infinite ;
+    }
+    @-webkit-keyframes test {
+    
+        90%{
+    
+            transform: rotateY(00deg);
+        }
+    
+        100% {
+        margin-left: calc(100% - 210px);
+        transform: rotateY(180deg);
+        }
+    }
+    @keyframes test {
+    
+        0%{
+    
+            transform: rotateY(00deg);
+        }
+    
+    
+        49%{
+            transform: rotateY(0);
+        }
+        50% {
+            margin-left: calc(100% - 210px);
+            transform: rotateY(180deg);
+    
+        }
+    
+        100% {
+            margin-right: calc(100% - 210px);
+            transform: rotateY(180deg);
+        }
+    }
+    footer{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Roboto', sans-serif;
+        background-color: #6CC356;
+        align-items: center;
+    }
+    .signature{
+        width: 100px;
+    }
+
+    @media (max-width:800px){
+        .marque{
+            width: 300px;
+        }
+        h1{
+            font-size: 30px;
+        }
+        .sous-titre{
+            font-size:  15px ;
+            margin: 0 10px;
+        }
+    }
