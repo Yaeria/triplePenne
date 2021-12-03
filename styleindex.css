@@ -130,7 +130,6 @@ body,html{
     margin-left: 180px;
 }
 
-
 .vert{
     color: #6CC356;
 }
@@ -185,7 +184,6 @@ body,html{
 .ligne1, .ligne2{
     display: flex;
     justify-content: space-around;
-    width: 50vw;
     margin-top: 150px;
     flex-wrap: wrap;
 }
@@ -324,11 +322,21 @@ footer{
         border-radius: 10px;
         padding: 25px;
     }
+
     .drapeau{
         transform: rotate(45deg);
         justify-content: space-between;
     }
     .main2{
         overflow-x: hidden;
+    }
+
+    .pastatab{
+        width: 0;
+    }
+
+    .imgpate{
+        width: 300px;
+        height: 270px;
     }
 }
