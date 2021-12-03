@@ -1,57 +1,32 @@
-const items = document.querySelectorAll('.image');
+const img = document.getElementById('carousel');
+const rightBtn = document.getElementById('right-btn');
+const leftBtn = document.getElementById('left-btn');
 
-/* On stock le nombre d'image  -1 car en js on compte a partir de Zero */
-const nbSlide = items.length ; 
+// Images are from unsplash
+let pictures = ['img/history-pasta3.jpg', 'img/history-pasta1.jpg', 'img/history-pasta2.jpg', 'img/history-pasta5.jpg '];
 
-/* Recup des boutons en javascript */
-const suivant = document.querySelector('.droite');
-const precedent = document.querySelector('.gauche');
+img.src = pictures[0];
+let position = 0;
 
-/* Variable de comptage */
-let count = 0;
-
-
-/* Event des boutons */
-suivant.addEventListener('click', slideSuivante)
-precedent.addEventListener('click', slidePrecedente)
-
-
-/* Regle le bug du premier clic */
-suivant.click()
-
-
-/* Function slide suivante */
-
-
-function slideSuivante(){
-    
-    if(count < nbSlide){
-        items[count].classList.remove('active');
-        count++;
-        items[count].classList.add('active')
-    }else{
-        items[count].classList.remove('active');
-        count = 0;
-        items[0].classList.add('active')
+const moveRight = () => {
+    if (position >= pictures.length - 1) {
+        position = 0
+        img.src = pictures[position];
+        return;
     }
-
+    img.src = pictures[position + 1];
+    position++;
 }
 
-/* Function slide precedente */
-
-
-function slidePrecedente(){
-
-    
-    if(count > 0){
-        items[count].classList.remove('active')
-        count--;
-        items[count].classList.add('active')
+const moveLeft = () => {
+    if (position < 1) {
+        position = pictures.length - 1;
+        img.src = pictures[position];
+        return;
     }
-    else{
-        items[count].classList.remove('active')
-        count = nbSlide ;
-        items[0].classList.add('active')
-    }
-
+    img.src = pictures[position - 1];
+    position--;
 }
+
+rightBtn.addEventListener("click", moveRight);
+leftBtn.addEventListener("click", moveLeft);
