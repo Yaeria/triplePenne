@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -24,7 +24,7 @@
         <div id="nav">
 
             <li><a class="link" onmouseover="audio7.play()" href="#">Accueil</a></li>
-            <li><a class="link lien-pour-js" onmouseover="audio3.play()" data-lien="ancrepasta" href="#">Nos Pasta</a>
+            <li><a class="link lien-pour-js" onmouseover="audio3.play()" data-lien="ancrepasta">Nos Pasta</a>
             </li>
             <li><a class="link" onmouseover="audio4.play()" href="histoire.html">La Storia</a></li>
             <li><a class="link" onmouseover="audio5.play()" href="chef.html">Qui sommes-nous ?</a></li>
@@ -55,26 +55,31 @@
             </div>
             <div class="pastatab">
                 <div class="ligne1">
-                    <div class="pasta">
-                        <img class="imgpate" src="img/COQUILLETTE.png" alt="COQUILLETTE">
-                        La Coquillette
+                    <div class="pasta"><a href="coquillette.html">
+                            <img class="imgpate" src="img/COQUILLETTE.png" alt="COQUILLETTE">
+                            La Coquillette</a>
                     </div>
-                    <div class="pasta"><img class="imgpate" src="img/spaghetti.png" alt="spaghetti">
+                    <div class="pasta"><a href="spaghetti.html"><img class="imgpate" src="img/spaghetti.png"
+                                alt="spaghetti"></a>
                         La Spaghetti
                     </div>
-                    <div class="pasta"><img class="imgpate" src="img/penne rigatte.png" alt="Penne rigate">
-                        La Penne rigate
+                    <div class="pasta"><a href="penne.html"><img class="imgpate" src="img/penne rigatte.png"
+                                alt="Penne rigate">
+                            La Penne rigate</a>
                     </div>
                 </div>
                 <div class="ligne2">
-                    <div class="pasta"><img src="img/Pipe rigatte.webp" class="imgpate" alt="Pipe rigate">
-                        La Pipe rigate
+                    <div class="pasta"><a href="pipe.html"><img src="img/Pipe rigatte.webp" class="imgpate"
+                                alt="Pipe rigate">
+                            La Pipe rigate</a>
                     </div>
-                    <div class="pasta"><img src="img/maccaoni.png" class="imgpate" alt="maccaroni">
-                        La Macaroni
+                    <div class="pasta"><a href="macaroni.html"><img src="img/maccaoni.png" class="imgpate"
+                                alt="maccaroni">
+                            La Macaroni</a>
                     </div>
-                    <div class="pasta"><img src="img/Farfalle.png" class="imgpate" alt="Farfalle">
-                        La Farfalle
+                    <div class="pasta"><a href="farfalle.html"><img src="img/Farfalle.png" class="imgpate"
+                                alt="Farfalle">
+                            La Farfalle</a>
                     </div>
                 </div>
             </div>
@@ -102,6 +107,7 @@
     <script src="scriptindex.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="scriptnav.js"></script>
+    <script src="scriptsound.js"></script>
     <script>
         AOS.init();
 
