@@ -16,6 +16,8 @@ body{
 }
 
 
+/*  ------------ Nav ------------------ */
+
 #btn{
     display: flex;
     justify-content: center;
@@ -92,9 +94,12 @@ body{
     color: #404040;
 }
 
+/* -------------- Logo ----------------- */
+
 .haut-de-page{
     position: relative;
     text-align: center;
+    user-select: none;
 }
 
 .texte-centrer{
