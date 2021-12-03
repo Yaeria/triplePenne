@@ -16,15 +16,20 @@
         <div id="btn" onclick="audio1.play()">
         </div>
     </div>
-    <div id="nav">
+    <header>
 
-        <li><a class="link" href="#">Accueil</a></li>
-        <li><a class="link lien-pour-js" data-lien="ancrepasta" href="#">Nos Pasta</a></li>
-        <li><a class="link" href="histoire.html">La Storia</a></li>
-        <li><a class="link" href="chef.html">Qui sommes-nous ?</a></li>
-        <li><a class="link" href="contacternous.html">Contactez-nous</a></li>
+        <div id="nav">
 
-    </div>
+            <li><a class="link" onmouseover="audio7.play()" href="index.html">Accueil</a></li>
+            <li><a class="link lien-pour-js" onmouseover="audio3.play()" href="index.html" data-lien="ancrepasta">Nos
+                    Pasta</a>
+            </li>
+            <li><a class="link" onmouseover="audio4.play()" href="histoire.html">La Storia</a></li>
+            <li><a class="link" onmouseover="audio5.play()" href="chef.html">Qui sommes-nous ?</a></li>
+            <li><a class="link" onmouseover="audio6.play()" href="contacternous.html">Contactez-nous</a></li>
+
+        </div>
+    </header>
 
 
 
@@ -77,17 +82,18 @@
 
             <div class="slider">
                 <div class="texte1">
-                    <img class ="image" src="img/history-pasta3.jpg" alt="La storia della pasta" />
-                    <img class ="image" src="img/history-pasta1.jpg" alt="La storia della pasta">
-                    <img class ="image" src="img/history-pasta5.jpg" alt="La storia della pasta">
-                    <img class ="image" src="img/history-pasta4.jpg" alt="La storia della pasta">
+                    <img class="image" src="img/history-pasta3.jpg" alt="La storia della pasta" />
+                    <img class="image" src="img/history-pasta1.jpg" alt="La storia della pasta">
+                    <img class="image" src="img/history-pasta5.jpg" alt="La storia della pasta">
+                    <img class="image" src="img/history-pasta4.jpg" alt="La storia della pasta">
                 </div>
 
-            <div class="boutons">
-                <div class="btn-nav gauche"> < </div>
-                        <div class="btn-nav droite">></div>
+                <div class="boutons">
+                    <div class="btn-nav gauche">
+                        < </div>
+                            <div class="btn-nav droite">></div>
+                    </div>
                 </div>
-            </div>
     </section>
 
 
@@ -103,6 +109,7 @@
 
     <script src="scripthistoire.js"></script>
     <script src="scriptnav.js"></script>
+    <script src="scriptsound.js"></script>
 
 </body>
 

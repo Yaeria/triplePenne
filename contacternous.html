@@ -19,23 +19,52 @@
 
         <div id="nav">
 
-            <li><a class="link" href="#">Accueil</a></li>
-            <li><a class="link lien-pour-js" data-lien="ancrepasta" href="#">Nos Pasta</a></li>
-            <li><a class="link" href="histoire.html">La Storia</a></li>
-            <li><a class="link" href="chef.html">Qui sommes-nous ?</a></li>
-            <li><a class="link" href="contacternous.html">Contactez-nous</a></li>
+            <li><a class="link" onmouseover="audio7.play()" href="index.html">Accueil</a></li>
+            <li><a class="link lien-pour-js" onmouseover="audio3.play()" href="index.html" data-lien="ancrepasta">Nos
+                    Pasta</a>
+            </li>
+            <li><a class="link" onmouseover="audio4.play()" href="histoire.html">La Storia</a></li>
+            <li><a class="link" onmouseover="audio5.play()" href="chef.html">Qui sommes-nous ?</a></li>
+            <li><a class="link" onmouseover="audio6.play()" href="contacternous.html">Contactez-nous</a></li>
 
         </div>
+    </header>
 
 
-        <div class="haut-de-page">
-            <img class="marque" src="img/assiette.png" alt="assiette">
-            <div class="texte-centrer">
-                <h1><span class="vert">Tri</span><span class="blanc">ple Pe</span><span class="rouge">nne</span>
-                    <p class="sous-titre">L'impasto, quello vero.</p>
-                </h1>
+    <div class="haut-de-page">
+        <img class="marque" src="img/assiette.png" alt="assiette">
+        <div class="texte-centrer">
+            <h1><span class="vert">Tri</span><span class="blanc">ple Pe</span><span class="rouge">nne</span>
+                <p class="sous-titre">L'impasto, quello vero.</p>
+            </h1>
 
-            </div>
+        </div>
+    </div>
+    <div class="ensemble-drapeau">
+        <div class="drapeau">
+            <div class="couleurvert"></div>
+            <div class="couleurblanc"></div>
+            <div class="couleurrouge"></div>
+        </div>
+
+        <div class="container">
+            <h2>Formulaire de contact</h2>
+            <form action="index.html">
+                <label for="fname">Nom & prénom</label>
+                <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
+
+                <label for="sujet">Sujet</label>
+                <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
+
+                <label for="emailAddress">Email</label>
+                <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+
+
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
+
+                <input type="submit" value="Envoyer">
+            </form>
         </div>
         <div class="ensemble-drapeau">
             <div class="drapeau">
@@ -43,47 +72,22 @@
                 <div class="couleurblanc"></div>
                 <div class="couleurrouge"></div>
             </div>
-
-            <div class="container">
-                <h2>Formulaire de contact</h2>
-                <form action="index.html">
-                    <label for="fname">Nom & prénom</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Votre nom et prénom">
-
-                    <label for="sujet">Sujet</label>
-                    <input type="text" id="sujet" name="sujet" placeholder="L'objet de votre message">
-
-                    <label for="emailAddress">Email</label>
-                    <input id="emailAddress" type="email" name="email" placeholder="Votre email">
-
-
-                    <label for="subject">Message</label>
-                    <textarea id="subject" name="subject" placeholder="Votre message" style="height:200px"></textarea>
-
-                    <input type="submit" value="Envoyer">
-                </form>
-            </div>
-            <div class="ensemble-drapeau">
-                <div class="drapeau">
-                    <div class="couleurvert"></div>
-                    <div class="couleurblanc"></div>
-                    <div class="couleurrouge"></div>
-                </div>
-            </div>
         </div>
-        <div class="display-anim"></div>
+    </div>
+    <div class="display-anim"></div>
 
-        <footer>
-            <p>Contact</p>
-            <p>Mention Légales</p>
-            <p>CGV</p>
-            <img class="signature" src="img/Signature.png" alt="Signature">
-        </footer>
+    <footer>
+        <p>Contact</p>
+        <p>Mention Légales</p>
+        <p>CGV</p>
+        <img class="signature" src="img/Signature.png" alt="Signature">
+    </footer>
 
-        <script src="scriptnav.js"></script>
+    <script src="scriptnav.js"></script>
+    <script src="scriptsound.js"></script>
 
 
-</div>
+    </div>
 
 
 </body>
