@@ -12,9 +12,8 @@ html,body{
 }
 
 body{
-    height: 150vh;
+    height: auto;
 }
-
 
 /*  ------------ Nav ------------------ */
 
@@ -104,7 +103,7 @@ body{
 
 .texte-centrer{
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -175,7 +174,7 @@ h2{
 }
 
 .texte-histoire{
-    font-size: 30px;
+    font-size: 2em;
     font-style: italic;
     margin: auto;
 }
@@ -188,64 +187,56 @@ h2{
 }
  /* -------- TEST--------------------- */
 
-*, ::before, ::after{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-
-.container{
-    max-width:800px ;
-    margin: 0 auto;
-    padding: 50px;
-}
-
-.slider img{
-    width: 600px;
-    display: none;
-}
-
-img.active{
-    display: block;
-    animation: fade 0.8s;
-}
-
-.texte1{
-    margin: 0 10px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-@keyframes fade{
-    from{
-        opacity:0;
-    }
-
-    top {
-        opacity :1;
-    }
-}
-
-.boutons{
-    border-radius: 10px;
-    width: 100%;
-    height: auto;
-    border: 1px solid #000;
-    box-shadow: 0 10px 10px rgba (0,0,0,0.3);
+.container {
+    margin-bottom: 20px;
+    width: 1000px;
+    height: 500px;
     display: flex;
     justify-content: center;
+    /*  box-shadow is from materialize css's website */
+    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
+        0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
 }
 
-.btn-nav{
-    font-size: 50px;
-    margin: 0 155px;
+.container img {
+    width: auto;
+    z-index: -2;
+}
+
+button {
+    height: 10%;
+    border: none;
+    outline: none;
+    background: rgba(0, 0, 0, 0.5);
     cursor: pointer;
+    padding: 1em;
+    display: flex;
 }
 
-.texte1.active{
-    display: none;
-    width: 700px;
+button .arrow {
+    border: solid #fff;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 10px;
+    transition: transform 0.3s ease-out;
+    outline: none;
+}
+
+#right-btn {
+    margin: auto 0 auto -2em;
+}
+
+#right-btn .arrow {
+    transform: rotate(-45deg);
+}
+
+#left-btn {
+    z-index: 0;
+    margin: auto -2em auto 0;
+}
+
+#left-btn .arrow {
+    transform: rotate(135deg);
 }
 
 footer{
@@ -259,6 +250,7 @@ footer{
 .signature{
     width: 100px;
 }
+
 
 /* Animation Vespa  */
 
@@ -332,21 +324,22 @@ footer{
         margin: 5px;
     }
 
-    .texte1{
-        margin: auto;
-        width: 200px;
+    .container{
+        height: 300px;
+        width: 300px;
     }
 
-    .slider img{
-    width: 300px;
+    #carousel{
+        height: 300px;
+        width: 300px;
     }
 
-    .boutons{
-        width: 200px;
+    button{
+        height: 50px;
     }
 
-    .btn-nav{
-        margin: 0 50px;
+    .second-content{
+        margin:20px 0 ;
     }
 }
 

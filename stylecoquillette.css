@@ -254,14 +254,121 @@ h2{
         transform: rotateY(180deg);
     }
 }
-
-footer{
-    display: flex;
-    justify-content: space-around;
-    font-family: 'Roboto', sans-serif;
-    background-color: #6CC356;
-    align-items: center;
+h1{
+    margin-top: 0;
 }
+.carte{
+    
+    text-align: center;
+    margin: auto;
+    background-color: transparent;
+    width: 300px;
+    height: 660px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+}
+.carte-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    }
+    .carte:hover .carte-inner {
+    transform: rotateY(180deg);
+    }
+    .carte-face, .flip-card-back {
+        border-radius: 20px;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+    }
+    .carte-face {
+        color: black;
+    }
+    .flip-card-back {
+        background-color: white;
+        color: black;
+        transform: rotateY(180deg);
+    }
+    .container{
+        flex-direction: column;
+    }
+    .mini-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    #h1{
+        font-size: 17px;
+    }
+    #h2{
+        font-size: 17px;
+    }
+    #para{
+        font-size: 15px;
+    }
+    #para2{
+        font-size: 15px;
+    }
+    #biere{
+        height: 40px;
+    }
+    .reverse{
+    transform: rotate(180deg);
+    }
+    .mini-container2{
+        line-height: 10px;
+        width: 290px;
+        height: auto;
+    }
+    #taille{
+        font-size: 20px;
+    }
+    h3{
+        margin-top: 0;
+    }
+    li{
+        font-size: 10px;
+    }
+    #largeur{
+        width: 80%;
+        margin: auto;
+    }
+    .rotate{
+        transform: rotate(90deg);
+        
+        
+    }
+    .rotate2{
+        transform: rotate(180deg);
+
+    }
+    .rotate4{
+        transform: rotate(270deg);
+        margin: 0;
+        
+    }
+    .part{
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+    .conteneur-anim{
+        display: flex;
+        margin: 40px;
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Roboto', sans-serif;
+        background-color: #6CC356;
+        align-items: center;
+    }
 
 .display-anim {
     height: 100px;
@@ -270,19 +377,50 @@ footer{
     -webkit-animation: test 10s infinite ;
     animation: test 10s infinite ;
 }
+.signature{
+    width: 100px;
+}
 
-@media (max-width:801px){
+@media (max-width:800px){
 
 h1{
-    font-size: 2.7em;
-    line-height: 55px;
+    font-size: 30px;
+    
+}
+.marque{
+    width: 300px;
+}
+h2{
+    font-size:40px;
 }
 
 .sous-titre{
-    font-size: 0.3em;
+    margin: 0 10px;
+    font-size:15px;
+}
+.drapeau {
+    margin: 5px;
+    width: 30px;
+}
+.drapeau2{
+    width: 30px;
+    margin: 5px;
+}
+.texte{
+    text-align: center;
+}
+.part{
+    display: none;
+}
+.conteneur-anim{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carte{
+    margin: 10px ;
 }
 
-.haut-de-page img{
-    width: 100%;
-}
+
+
 }
