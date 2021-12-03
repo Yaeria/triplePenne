@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Triple Penne</title>
+    <link rel="icon" href="img/penne rigatte.png">
     <link rel="stylesheet" href="styleindex.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,32 +15,35 @@
 </head>
 
 <body>
-    <header>
-        <div class="content-btn-ham" data-aos="fade-left" data-aos-duration="1500">
-            <div id="btn">
-                <span class="iconify" data-icon="ci:hamburger"></span>
-            </div>
+    <div class="content-btn-ham" data-aos="fade-left" data-aos-duration="1500">
+        <div id="btn" onclick="audio1.play()">
         </div>
+    </div>
+    <header>
 
         <div id="nav">
 
             <li><a class="link" href="#">Accueil</a></li>
-            <li><a class="link" href="#">Nos Pasta</a></li>
+            <li><a class="link lien-pour-js" data-lien="ancrepasta" href="#">Nos Pasta</a></li>
             <li><a class="link" href="#">La Storia</a></li>
             <li><a class="link" href="#">Qui suis-je ?</a></li>
             <li><a class="link" href="#">Lien</a></li>
 
         </div>
     </header>
-    <div class="main">
-        <div class="titre_soustitre" data-aos="fade-right" data-aos-duration="1500">
+    <div class="main" id="main">
+        <div class="titre_soustitre" id="titre-js">
             <div class="titre"><span class="vert">Trip</span><span class="blanc">le Pe</span><span
                     class="rouge">nne</span></div>
             <div class="sous-titre">L’impasto, quello vero.</div>
         </div>
+        <div class="fork lien-pour-js" data-lien="ancrepasta">
+            <img src="img/fourchette ancre.svg" alt="ancre fork">
+        </div>
     </div>
 
-    <div class="main2">
+
+    <div class="main2" id="ancrepasta">
         <div class="titre2">Que Pasta ?</div>
         <div class="sous-titre2">Choisissez votre pasta préférée</div>
         <div class="ensemble-drapeau">
@@ -79,8 +83,8 @@
                 <div class="couleurrouge"></div>
             </div>
         </div>
+        <div class="display-anim"></div>
     </div>
-
     <footer>
         <p>Contact</p>
         <p>Mention Légales</p>
@@ -96,10 +100,12 @@
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <script src="scriptindex.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="scriptvespa.js"></script>
     <script>
         AOS.init();
+
     </script>
-    <!-- -->
+    <!---->
 </body>
 
 </html>
