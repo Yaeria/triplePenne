@@ -60,15 +60,18 @@ lienEcran.forEach(lien => {
 var prevScrollpos = window.pageYOffset;
 
 window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos) {
-        document.getElementById("main").style.backgroundPositionX = "";
-        document.getElementById("titre-js").style.marginLeft = "";
-    } else {
-        document.getElementById("main").style.backgroundPositionX = "2000px";
-        document.getElementById("titre-js").style.marginLeft = "-1000px";
+    if (window.innerWidth > 984) {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+            document.getElementById("main").style.backgroundPositionX = "";
+            document.getElementById("titre-js").style.marginLeft = "";
+        } else {
+            document.getElementById("main").style.backgroundPositionX = "200%";
+            document.getElementById("titre-js").style.marginLeft = "-1000px";
+        }
+        prevScrollpos = currentScrollPos;
+
     }
-    prevScrollpos = currentScrollPos;
 }
 
 const audio1 = new Audio();
