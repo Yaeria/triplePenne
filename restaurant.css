@@ -1,6 +1,12 @@
 html,body{
     margin: 0;
     padding: 0;
+    height: auto;
+    background-image: url(img/restauantLille.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
 @font-face {
@@ -9,13 +15,6 @@ html,body{
          url('font/sweet_child-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-}
-
-body{
-    height: auto;
-    background-image: url(img/restauantLille.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /*  ------------ Nav ------------------ */
@@ -238,13 +237,7 @@ footer{
     }
 
     .texte-histoire{
-        font-size: 18px;
-    }
-
-    .drapeau{
-        width: 40px;
-        height: auto;
-        margin: 5px;
+        font-size: 24px;
     }
 
     .container{
@@ -263,5 +256,10 @@ footer{
 
     .second-content{
         margin:20px 0 ;
+    }
+
+    .texte-histoire2{
+        width: 300px;
+        font-size: 24px;
     }
 }
