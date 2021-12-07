@@ -239,6 +239,8 @@ button .arrow {
     transform: rotate(135deg);
 }
 
+/* ------------- Footer ----------------------- */
+
 footer{
     display: flex;
     justify-content: space-around;
@@ -250,7 +252,6 @@ footer{
 .signature{
     width: 100px;
 }
-
 
 /* Animation Vespa  */
 
@@ -269,8 +270,8 @@ footer{
     }
 
     100% {
-       margin-left: calc(100% - 210px);
-       transform: rotateY(180deg);
+    margin-left: calc(100% - 210px);
+    transform: rotateY(180deg);
     }
 }
 @keyframes test {
@@ -342,6 +343,3 @@ footer{
         margin:20px 0 ;
     }
 }
-
-
-
