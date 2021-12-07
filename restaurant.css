@@ -13,6 +13,9 @@ html,body{
 
 body{
     height: auto;
+    background-image: url(img/restauantLille.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*  ------------ Nav ------------------ */
@@ -96,6 +99,9 @@ body{
 /* -------------- Logo ----------------- */
 
 .haut-de-page{
+    height: 15vh;
+    display: flex;
+    justify-content: center;
     position: relative;
     text-align: center;
     user-select: none;
@@ -124,7 +130,7 @@ h1{
 }
 
 .rouge{
-    color: red;
+    color: #EB1717;
 }
 
 .sous-titre{
@@ -137,46 +143,42 @@ h1{
     margin-left: 100px;
 }
 
-/* Drapeaux */
-
-.ensemble-drapeau{
-    display: flex;
-    justify-content: space-between;
+.main-content{
+    height: 100vh;
 }
-
-.drapeau{
-    display: flex;
-    justify-content: center;
-    margin: 40px;
-    height: 70vh;
-}
-
-.couleurvert{
-    width: 20px;
-    background-color: #6CC356;
-}
-.couleurblanc{
-    width: 20px;
-}
-.couleurrouge{
-    width: 20px;
-    background-color: #EB1717;
-} 
 
 h2{
+    margin-top: 70px;
     font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif; ;
     font-size: 70px;
     font-weight: lighter;
     font-style: italic;
     justify-content: center;
+    color: white;
+    background-color:rgba(12, 12, 12, 0.7) ;
+}
+
+.texte{
+    flex-direction: column;
     display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .texte-histoire{
     font-size: 2em;
     font-style: italic;
-    margin: auto;
+    width: 70%;
+    background-color: rgba(12, 12, 12, 0.7);
 }
+
+.texte-histoire2{
+    font-size: 2em;
+    font-style: italic;
+    width: 43%;
+    background-color: rgba(12, 12, 12, 0.7);
+}    
 
 .second-content{
     height: auto;
@@ -184,58 +186,21 @@ h2{
     justify-content: center;
     display: flex;
 }
- /* -------- TEST--------------------- */
 
-.container {
-    margin-bottom: 20px;
-    width: 1000px;
-    height: 500px;
+.histoire{
     display: flex;
+    margin: auto;
     justify-content: center;
-    /*  box-shadow is from materialize css's website */
-    box-shadow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),
-        0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 11px 15px -7px rgba(0, 0, 0, 0.2);
+    align-items: center;
 }
 
-.container img {
-    width: auto;
-    z-index: -2;
+.restaurant{
+    width: 50%;
+    height: 50%;
 }
 
-button {
-    height: 10%;
-    border: none;
-    outline: none;
-    background: rgba(0, 0, 0, 0.5);
-    cursor: pointer;
-    padding: 1em;
-    display: flex;
-}
-
-button .arrow {
-    border: solid #fff;
-    border-width: 0 4px 4px 0;
-    display: inline-block;
-    padding: 10px;
-    transition: transform 0.3s ease-out;
-    outline: none;
-}
-
-#right-btn {
-    margin: auto 0 auto -2em;
-}
-
-#right-btn .arrow {
-    transform: rotate(-45deg);
-}
-
-#left-btn {
-    z-index: 0;
-    margin: auto -2em auto 0;
-}
-
-#left-btn .arrow {
-    transform: rotate(135deg);
+p{
+    color: white;
 }
 
 /* ------------- Footer ----------------------- */
@@ -250,48 +215,6 @@ footer{
 
 .signature{
     width: 100px;
-}
-
-/* Animation Vespa  */
-
-.display-anim {
-    height: 100px;
-    background: url("img/vespa\ 1.png") no-repeat left center;
-    width: 210px;
-    -webkit-animation: test 10s infinite ;
-    animation: test 10s infinite ;
-}
-@-webkit-keyframes test {
-
-    90%{
-
-        transform: rotateY(00deg);
-    }
-
-    100% {
-    margin-left: calc(100% - 210px);
-    transform: rotateY(180deg);
-    }
-}
-@keyframes test {
-
-    0%{
-
-        transform: rotateY(00deg);
-    }
-
-    49%{
-        transform: rotateY(0);
-    }
-    50% {
-        margin-left: calc(100% - 210px);
-        transform: rotateY(180deg);
-    }
-
-    100% {
-        margin-right: calc(100% - 210px);
-        transform: rotateY(180deg);
-    }
 }
 
 /*             Responsive                       */
