@@ -117,7 +117,7 @@ body,html{
 
 .titre{
     font-size: 5em;
-    font-family: sweet_child_scriptregular;
+    font-family: 'sweet_child_scriptregular';
     color: white;
     user-select: none;
 }
