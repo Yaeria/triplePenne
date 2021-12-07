@@ -153,9 +153,6 @@ body,html{
     font-family: 'Roboto', sans-serif;
     justify-content: center;
     flex-direction: column;
-    background: url(img/tourdepise.png) no-repeat;
-    background-position-y: bottom;
-    background-position-x: 100px;
 }
 
 .titre2{

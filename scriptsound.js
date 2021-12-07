@@ -1,5 +1,4 @@
 const audio1 = new Audio();
-
 audio1.src = "sound/mario-nav-oof.mp3"
 
 const audio2 = new Audio();
