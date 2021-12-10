@@ -1,8 +1,8 @@
-let HDF = document.getElementById('region-FR-HDF')
-let COR = document.getElementById('region-FR-COR')
-let OCC = document.getElementById('region-FR-OCC')
-let BFC = document.getElementById('region-FR-BFC')
-let BRE = document.getElementById('region-FR-BRE')
+let HDF = document.getElementById('region-FR-HDF') // Fait
+let COR = document.getElementById('region-FR-COR') // Fait
+let OCC = document.getElementById('region-FR-OCC') // Fait
+let BFC = document.getElementById('region-FR-BFC') // Fait
+let BRE = document.getElementById('region-FR-BRE') // Fait
 
 // Haut de France
 if (window.i > 801) {
@@ -83,4 +83,6 @@ if (window.i > 801) {
         eventBFC.target.style.fill = ""
         BFCText.style.display = "none"
     })
-}
+
+
+}       
