@@ -4,7 +4,12 @@ html, body{
     font-family: 'Roboto', sans-serif;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    background:#151515;
+    background:url(img/texture.png);
+    background-size: 1px;
+}
+
+a{
+    text-decoration: none;
 }
 
 @font-face {

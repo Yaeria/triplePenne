@@ -23,7 +23,7 @@ lienEcran.forEach(lien => {
 var prevScrollpos = window.pageYOffset;
 
 window.onscroll = function () {
-    if (window.innerWidth > 984) {
+    if (window.innerWidth > 801) {
         var currentScrollPos = window.pageYOffset;
         if (prevScrollpos > currentScrollPos) {
             document.getElementById("main").style.backgroundPositionX = "";
