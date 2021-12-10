@@ -1,88 +1,90 @@
-let HDF = document.getElementById('region-FR-HDF') // Fait
-let COR = document.getElementById('region-FR-COR') // Fait
-let OCC = document.getElementById('region-FR-OCC') // Fait
-let BFC = document.getElementById('region-FR-BFC') // Fait
-let BRE = document.getElementById('region-FR-BRE') // Fait
+let HDF = document.getElementById('region-FR-HDF')
+let COR = document.getElementById('region-FR-COR')
+let OCC = document.getElementById('region-FR-OCC')
+let BFC = document.getElementById('region-FR-BFC')
+let BRE = document.getElementById('region-FR-BRE')
+window.onscroll = function () { functionscroll() }
 
 // Haut de France
-if (window.i > 801) {
-    HDF.addEventListener("mouseover", function (eventHDF) {
-        const HDFText = document.getElementById('HDF')
-        eventHDF.target.style.fill = "red"
-        eventHDF.target.style.transition = "0.5s"
-        HDFText.style.display = "block"
-    })
+function functionscroll() {
 
-    HDF.addEventListener("mouseout", function (eventHDF) {
-        const HDFText = document.getElementById('HDF')
-        eventHDF.target.style.transition = "0.5s"
-        eventHDF.target.style.fill = ""
-        HDFText.style.display = "none"
-    })
+    if (window.innerWidth > 801) {
+        HDF.addEventListener("mouseover", function (eventHDF) {
+            const HDFText = document.getElementById('HDF')
+            eventHDF.target.style.fill = "red"
+            eventHDF.target.style.transition = "0.5s"
+            HDFText.style.display = "block"
+        })
 
-    // Occitanie
+        HDF.addEventListener("mouseout", function (eventHDF) {
+            const HDFText = document.getElementById('HDF')
+            eventHDF.target.style.transition = "0.5s"
+            eventHDF.target.style.fill = ""
+            HDFText.style.display = "none"
+        })
 
-    OCC.addEventListener("mouseover", function (eventOCC) {
-        const OCCText = document.getElementById('OCC')
-        eventOCC.target.style.fill = "red"
-        eventOCC.target.style.transition = "0.5s"
-        OCCText.style.display = "block"
-    })
+        // Occitanie
 
-    OCC.addEventListener("mouseout", function (eventOCC) {
-        const OCCText = document.getElementById('OCC')
-        eventOCC.target.style.transition = "0.5s"
-        eventOCC.target.style.fill = ""
-        OCCText.style.display = "none"
-    })
+        OCC.addEventListener("mouseover", function (eventOCC) {
+            const OCCText = document.getElementById('OCC')
+            eventOCC.target.style.fill = "red"
+            eventOCC.target.style.transition = "0.5s"
+            OCCText.style.display = "block"
+        })
 
-    // Bretagne
+        OCC.addEventListener("mouseout", function (eventOCC) {
+            const OCCText = document.getElementById('OCC')
+            eventOCC.target.style.transition = "0.5s"
+            eventOCC.target.style.fill = ""
+            OCCText.style.display = "none"
+        })
 
-    BRE.addEventListener("mouseover", function (eventBRE) {
-        const BREText = document.getElementById('BRE')
-        eventBRE.target.style.fill = "red"
-        eventBRE.target.style.transition = "0.5s"
-        BREText.style.display = "block"
-    })
+        // Bretagne
 
-    BRE.addEventListener("mouseout", function (eventBRE) {
-        const BREText = document.getElementById('BRE')
-        eventBRE.target.style.transition = "0.5s"
-        eventBRE.target.style.fill = ""
-        BREText.style.display = "none"
-    })
+        BRE.addEventListener("mouseover", function (eventBRE) {
+            const BREText = document.getElementById('BRE')
+            eventBRE.target.style.fill = "red"
+            eventBRE.target.style.transition = "0.5s"
+            BREText.style.display = "block"
+        })
 
-    // Corse
+        BRE.addEventListener("mouseout", function (eventBRE) {
+            const BREText = document.getElementById('BRE')
+            eventBRE.target.style.transition = "0.5s"
+            eventBRE.target.style.fill = ""
+            BREText.style.display = "none"
+        })
 
-    COR.addEventListener("mouseover", function (eventCOR) {
-        const CORText = document.getElementById('COR')
-        eventCOR.target.style.fill = "red"
-        eventCOR.target.style.transition = "0.5s"
-        CORText.style.display = "block"
-    })
+        // Corse
 
-    COR.addEventListener("mouseout", function (eventCOR) {
-        const CORText = document.getElementById('COR')
-        eventCOR.target.style.transition = "0.5s"
-        eventCOR.target.style.fill = ""
-        CORText.style.display = "none"
-    })
+        COR.addEventListener("mouseover", function (eventCOR) {
+            const CORText = document.getElementById('COR')
+            eventCOR.target.style.fill = "red"
+            eventCOR.target.style.transition = "0.5s"
+            CORText.style.display = "block"
+        })
 
-    // Bourgogne
+        COR.addEventListener("mouseout", function (eventCOR) {
+            const CORText = document.getElementById('COR')
+            eventCOR.target.style.transition = "0.5s"
+            eventCOR.target.style.fill = ""
+            CORText.style.display = "none"
+        })
 
-    BFC.addEventListener("mouseover", function (eventBFC) {
-        const BFCText = document.getElementById('BFC')
-        eventBFC.target.style.fill = "red"
-        eventBFC.target.style.transition = "0.5s"
-        BFCText.style.display = "block"
-    })
+        // Bourgogne
 
-    BFC.addEventListener("mouseout", function (eventBFC) {
-        const BFCText = document.getElementById('BFC')
-        eventBFC.target.style.transition = "0.5s"
-        eventBFC.target.style.fill = ""
-        BFCText.style.display = "none"
-    })
+        BFC.addEventListener("mouseover", function (eventBFC) {
+            const BFCText = document.getElementById('BFC')
+            eventBFC.target.style.fill = "red"
+            eventBFC.target.style.transition = "0.5s"
+            BFCText.style.display = "block"
+        })
 
-
-}       
+        BFC.addEventListener("mouseout", function (eventBFC) {
+            const BFCText = document.getElementById('BFC')
+            eventBFC.target.style.transition = "0.5s"
+            eventBFC.target.style.fill = ""
+            BFCText.style.display = "none"
+        })
+    }
+}
